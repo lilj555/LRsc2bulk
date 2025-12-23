@@ -10,5 +10,8 @@ data/
 models/
 logs/
 results/
+results*/
 *.pth
 *.pt
+*.log
+nohup.out
