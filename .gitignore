@@ -9,8 +9,8 @@ venv/
 data/
 models/
 logs/
-results/
-results*/
+results/*
+!results/.gitkeep
 *.pth
 *.pt
 *.log
