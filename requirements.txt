@@ -1,0 +1,41 @@
+# 核心深度学习框架
+torch>=1.12.0
+torch-geometric>=2.1.0
+torch-scatter>=2.0.9
+torch-sparse>=0.6.15
+
+# 数据处理
+pandas>=1.5.0
+numpy>=1.21.0
+scikit-learn>=1.1.0
+
+# 图处理
+networkx>=2.8.0
+dgl>=0.9.0
+
+# 超参数优化
+optuna>=3.0.0
+ray[tune]>=2.0.0
+
+# 可视化
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.10.0
+tensorboard>=2.10.0
+
+# 配置管理
+pyyaml>=6.0
+hydra-core>=1.2.0
+
+# 生物信息学
+biopython>=1.79
+goatools>=1.2.0
+
+# 工具库
+tqdm>=4.64.0
+wandb>=0.13.0
+psutil>=5.9.0
+
+# 加速库
+numba>=0.56.0
+cupy-cuda11x>=11.0.0  # 根据CUDA版本调整
