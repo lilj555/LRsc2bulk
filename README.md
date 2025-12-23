@@ -158,87 +158,9 @@ GNNLigandReceptorModel(
 )
 ```
 
-## 📈 性能指标
-
-### 目标性能
-- **MSE**: < 0.1 (目标) / < 0.05 (优秀)
-- **R²**: > 0.7 (目标) / > 0.85 (优秀)
-- **Pearson相关**: > 0.8 (目标) / > 0.9 (优秀)
-
-### 训练效率
-- **单epoch时间**: < 5分钟 (GPU)
-- **内存使用**: 自动优化
-- **混合精度**: 支持FP16加速
-
-## 🛠️ 高级用法
-
-### 1. 自定义配置
-
-```bash
-# 使用自定义配置文件
-python train.py --config my_config.yaml --mode train
-```
-
-### 2. 恢复训练
-
-```bash
-# 从检查点恢复
-python train.py --checkpoint models/checkpoint_epoch_50.pth --mode train
-```
-
-### 3. 调整日志级别
-
-```bash
-# 详细调试信息
-python train.py --log-level DEBUG --mode train
-```
-
-### 4. 指定conda环境
-
-```bash
-# 指定环境名称
-python train.py --conda-env my_dl_env --mode train
-```
-
-## 🔍 故障排除
-
-### 常见问题
-
-1. **CUDA内存不足**
-   - 减少batch_size
-   - 启用混合精度训练
-   - 使用梯度累积
-
-2. **训练收敛慢**
-   - 调整学习率
-   - 检查数据标准化
-   - 使用学习率调度器
-
-3. **GPU未被识别**
-   - 检查CUDA安装
-   - 验证PyTorch GPU支持
-   - 确认GPU驱动版本
-
-### 性能优化建议
-
-1. **数据加载优化**
-   - 增加num_workers
-   - 启用pin_memory
-   - 使用SSD存储数据
-
-2. **模型优化**
-   - 调整模型大小
-   - 使用知识蒸馏
-   - 模型剪枝
-
-3. **训练优化**
-   - 混合精度训练
-   - 分布式训练
-   - 梯度检查点
-
 ## 📝 更新日志
 
-### v1.0.0 (2024-01)
+### v1.0.0 (2025-12)
 - 初始版本发布
 - 基础GNN模型实现
 - 自动GPU管理
@@ -256,13 +178,3 @@ python train.py --conda-env my_dl_env --mode train
 ## 📄 许可证
 
 本项目采用MIT许可证 - 详见LICENSE文件
-
-## 📞 联系方式
-
-如有问题或建议，请联系：
-- 邮箱: [your-email@example.com]
-- 项目地址: [GitHub链接]
-
----
-
-**注意**: 请确保在deeplearning conda环境中运行所有命令，并根据您的硬件配置调整相关参数。
